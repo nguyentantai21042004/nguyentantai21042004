@@ -132,23 +132,6 @@ func main() {
 
 ---
 
-## 📊 GitHub Statistics
-
-<div align="center">
-  
-<img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&theme=tokyonight&show_icons=true&hide_border=false&count_private=true" alt="GitHub Stats" height="165">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&theme=tokyonight&show_icons=true&hide_border=false&layout=compact" alt="Top Languages" height="165">
-
-</div>
-
-<div align="center">
-  
-[![GitHub Streak](https://streak-stats.demolab.com/?user=YOUR_USERNAME&theme=tokyonight)](https://git.io/streak-stats)
-
-</div>
-
----
-
 ## 🎓 Education
 
 **🏫 Ho Chi Minh City University of Technology (HCMUT)**  
