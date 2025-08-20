@@ -53,6 +53,11 @@ func main() {
 
 ---
 
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
+
+---
+
 ## 💼 Professional Experience
 
 ### 🏢 **Backend Developer Intern** | Tanca Company
