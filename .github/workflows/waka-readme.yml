@@ -26,3 +26,4 @@ jobs:
           SHOW_TOTAL: true
           COMMIT_MESSAGE: "Update coding stats"
           TARGET_BRANCH: main
+          # Updated workflow to use valid input parameters
