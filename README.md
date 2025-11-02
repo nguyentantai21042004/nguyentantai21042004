@@ -2,12 +2,6 @@
 
 <div align="center">
   
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Golang+Backend+Developer;DevOps+Enthusiast;Microservices+Architect;AI+Integration+Specialist)](https://git.io/typing-svg)
-
-</div>
-
-<div align="center">
-  
 **Portfolio:** [tantai.dev](https://tantai.dev)  
 **Email:** nguyentantai.dev@gmail.com  
 **Phone:** 0369169678  
