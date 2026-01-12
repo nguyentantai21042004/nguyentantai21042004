@@ -78,11 +78,19 @@ export const experiences: Experience[] = [
     role: "Backend Developer (Part-time)",
     period: "Oct 2025 - Dec 2025",
     description: [
-      "Worked in AWS environment supporting database, logging, and command processing for robotic systems",
-      "Joined Dispatcher team focusing on IoT robot command orchestration using Python (FastAPI) and Node.js (TypeScript)",
-      "Developed backend services for AI tasks and robot logic coordination with real-time communication",
+      "Developed backend services enabling real-time robot command coordination using MQTT protocol, Redis Pub/Sub, and ROS1 and ROS2 systems",
+      "Integrated ROS1 and ROS2 messaging for seamless robotic communication in cloud and IoT environments",
+      "Implemented command processing, logging, and orchestration workflows over AWS leveraging Node.js (TypeScript), Golang (Lambda)",
     ],
-    technologies: ["Python", "FastAPI", "AWS", "IoT", "TypeScript", "Node.js"],
+    technologies: [
+      "Golang",
+      "AWS",
+      "IoT",
+      "ROS1",
+      "ROS2",
+      "TypeScript",
+      "Node.js",
+    ],
     type: "work",
   },
   {
@@ -90,7 +98,7 @@ export const experiences: Experience[] = [
     role: "Backend Developer (Part-time)",
     period: "Aug 2024 - Sep 2025",
     description: [
-      "Completed 1-month intensive training on Golang (Gin), MongoDB, Mockery, Jenkins CI/CD, Rancher, RabbitMQ, and Swagger/OpenAPI",
+      "Completed 1-month intensive training on Golang (Gin), MongoDB, Mockery, Jenkins CI/CD, Rancher, RabbitMQ, Swagger",
       "Developed and maintained Golang (Gin) microservices in production for large-scale HRM system",
       "Designed and implemented Talent Management service with AI-powered career path generation",
       "Maintained attendance and leave management services based on Vietnam labor laws",
@@ -113,11 +121,7 @@ export const experiences: Experience[] = [
     company: "Ho Chi Minh City University of Technology (HCMUT)",
     role: "Bachelor of Engineering - Computer Science",
     period: "2022 - 2026 (Expected)",
-    description: [
-      "Focus on Software Engineering and Distributed Systems",
-      "GPA: 3.2/4.0",
-      "Active member of HCMUT Information Security Club",
-    ],
+    description: ["Focus on Software Engineering and Distributed Systems"],
     technologies: [
       "Algorithms",
       "Data Structures",
@@ -151,25 +155,19 @@ export const deployedProjects: DeployedProject[] = [
     image: "/social-media-analytics-dashboard-dark.png",
     technologies: [
       "Golang (Gin)",
+      "Python (FastAPI)",
+      "Phobert ONNX",
       "RabbitMQ",
       "Redis",
       "PostgreSQL",
       "SQLBoiler",
-      "Docker",
+      "Kubernetes",
+      "...",
     ],
-    liveUrl: "https://smap.ngtantai.pro",
-    githubUrl: "https://github.com/nguyentantai21042004/analytics-engine",
-    docsUrl: "https://github.com/nguyentantai21042004/analytics-engine#readme",
+    liveUrl: "https://smap.tantai.dev",
+    githubUrl: "https://github.com/nguyentantai21042004/smap-api",
+    docsUrl: "https://smap-docs.tantai.dev",
     featured: true,
-  },
-  {
-    title: "SMAP Speech-to-Text Worker",
-    description:
-      "Specialized AI worker service handling compute-intensive speech-to-text conversion from video/audio collected from social platforms.",
-    image: "/placeholder.svg",
-    technologies: ["Python", "AI/ML", "MinIO (S3)", "Worker Pattern"],
-    githubUrl: "https://github.com/nguyentantai21042004/speech-to-text",
-    featured: false,
   },
   {
     title: "Kanban Board - Real-time Collaboration",
@@ -183,25 +181,9 @@ export const deployedProjects: DeployedProject[] = [
       "WebSocket",
       "MinIO",
     ],
-    liveUrl: "https://kanban.ngtantai.pro",
+    liveUrl: "https://kanban.tantai.dev",
     githubUrl: "https://github.com/nguyentantai21042004/kanban-api",
     featured: true,
-  },
-  {
-    title: "Portfolio Website",
-    description:
-      "Personal portfolio deployed on self-managed homelab infrastructure with automated CI/CD pipeline via Cloudflare Tunnel.",
-    image: "/portfolio-website-dark-theme-developer.jpg",
-    technologies: [
-      "Next.js 15",
-      "TypeScript",
-      "Tailwind CSS",
-      "Docker",
-      "Nginx",
-    ],
-    liveUrl: "https://tantai.dev",
-    githubUrl: "https://github.com/nguyentantai21042004/portfolio",
-    featured: false,
   },
 ];
 
@@ -235,18 +217,18 @@ export const academicRepos: AcademicRepo[] = [
       "Documentation as Code - version-controlled infrastructure knowledge",
   },
   {
-    title: "Kanban Web Frontend",
+    title: "D-Hell CLI",
     description:
-      "Modern React frontend with Next.js 14 App Router, real-time WebSocket integration, and drag-and-drop task management.",
-    technologies: ["Next.js 14", "TypeScript", "Tailwind CSS", "WebSocket"],
-    githubUrl: "https://github.com/nguyentantai21042004/kanban-web",
+      "CLI tool to discover, classify, and audit development environment dependencies across multiple programming languages.",
+    technologies: ["Golang", "MacOS"],
+    githubUrl: "https://github.com/nguyentantai21042004/dependency-hell-cli",
   },
   {
     title: "Analytics Engine Backend",
     description:
       "Event-driven microservice architecture with RabbitMQ message queue, implementing idempotency and failure isolation patterns.",
     technologies: ["Golang", "RabbitMQ", "PostgreSQL", "Redis"],
-    githubUrl: "https://github.com/nguyentantai21042004/analytics-engine",
+    githubUrl: "https://github.com/nguyentantai21042004/analytics_engine",
     highlight:
       "Production-grade patterns: Event-driven, Idempotency, Failure Isolation",
   },
@@ -272,7 +254,7 @@ export const skills: Skill[] = [
     name: "Python (FastAPI)",
     category: "Backend",
     description:
-      "Used at ROBO-HI for AI tasks and IoT backend services. Familiar with async programming, Pydantic validation, and worker patterns.",
+      "Used at Academic projects and personal projects for AI tasks. Familiar with async programming, Pydantic validation, and worker patterns.",
     proficiency: "Comfortable",
   },
   {
@@ -280,6 +262,13 @@ export const skills: Skill[] = [
     category: "Backend",
     description:
       "Building IoT robot coordination logic at ROBO-HI. Strong TypeScript typing and experience with Express patterns.",
+    proficiency: "Comfortable",
+  },
+  {
+    name: "PHP (Legacy, Laravel)",
+    category: "Backend",
+    description:
+      "Maintained and extended legacy PHP monolithic systems at TANCA. Migrated legacy code to modern Laravel. Debugged, refactored, and optimized existing features supporting thousands of business users.",
     proficiency: "Comfortable",
   },
   {
@@ -325,7 +314,7 @@ export const skills: Skill[] = [
     proficiency: "Learning",
   },
   {
-    name: "Jenkins CI/CD",
+    name: "CI/CD",
     category: "Cloud & DevOps",
     description:
       "Built production pipelines at TANCA for automated testing, building, and deployment to Rancher-managed K8s.",
@@ -373,36 +362,9 @@ export const skills: Skill[] = [
       "Message queue at TANCA & SMAP for async processing, service decoupling, and event-driven architecture.",
     proficiency: "Comfortable",
   },
-  {
-    name: "Git",
-    category: "Tools",
-    description:
-      "Daily workflow with branching strategies (GitFlow), rebasing, cherry-picking, and collaborative PR-based development.",
-    proficiency: "Proficient",
-  },
-  {
-    name: "Nginx",
-    category: "Tools",
-    description:
-      "Reverse proxy and load balancing for homelab. SSL termination, upstream configuration, and caching setup.",
-    proficiency: "Comfortable",
-  },
-  {
-    name: "Cloudflare",
-    category: "Tools",
-    description:
-      "DNS management, CDN, SSL certificates, and Tunnel configuration for exposing homelab services to internet.",
-    proficiency: "Comfortable",
-  },
 ];
 
-export const skillCategories = [
-  "All",
-  "Backend",
-  "Cloud & DevOps",
-  "Database",
-  "Tools",
-];
+export const skillCategories = ["All", "Backend", "Cloud & DevOps", "Database"];
 
 // ============ NAV ITEMS ============
 export const navItems = [

@@ -1,5 +1,5 @@
-import { Github, Linkedin, Mail } from "lucide-react"
-import { personalInfo } from "@/lib/data"
+import { Github, Linkedin, Mail } from "lucide-react";
+import { personalInfo } from "@/lib/data";
 
 export function Footer() {
   return (
@@ -8,11 +8,11 @@ export function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <span className="text-xl font-bold text-accent">Tan Tai</span>
-            <span className="text-muted-foreground">.</span>
           </div>
 
           <p className="text-sm text-muted-foreground text-center">
-            © {new Date().getFullYear()} {personalInfo.name}. All rights reserved.
+            © {new Date().getFullYear()} {personalInfo.name}. All rights
+            reserved.
           </p>
 
           <div className="flex items-center gap-4">
@@ -45,5 +45,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
