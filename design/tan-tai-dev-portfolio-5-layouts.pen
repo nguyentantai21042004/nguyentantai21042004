@@ -4392,36 +4392,6 @@
           "fontWeight": "normal"
         },
         {
-          "type": "ellipse",
-          "id": "obuFG",
-          "x": 60,
-          "y": 416,
-          "name": "m2halo",
-          "fill": "#ECE7DB",
-          "width": 268,
-          "height": 268
-        },
-        {
-          "type": "ellipse",
-          "id": "mYBqe",
-          "x": 83,
-          "y": 438,
-          "name": "m2avatar",
-          "fill": {
-            "type": "image",
-            "enabled": true,
-            "url": "public/avatar.jpg",
-            "mode": "fill"
-          },
-          "width": 224,
-          "height": 224,
-          "stroke": {
-            "align": "inside",
-            "thickness": 6,
-            "fill": "#FFFFFF"
-          }
-        },
-        {
           "type": "frame",
           "id": "G1OHT",
           "x": 28,
@@ -4485,7 +4455,7 @@
           "y": 836,
           "name": "m2stat",
           "width": 334,
-          "height": 110,
+          "height": 130,
           "fill": "#FFFFFF",
           "cornerRadius": 16,
           "stroke": {
@@ -4502,14 +4472,27 @@
           "children": [
             {
               "type": "text",
+              "id": "LlbA1",
+              "name": "mRoleEy",
+              "fill": "#1B5C64",
+              "textGrowth": "fixed-width",
+              "width": 294,
+              "content": "ROLE",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 10,
+              "fontWeight": "800",
+              "letterSpacing": 0.6
+            },
+            {
+              "type": "text",
               "id": "G38Vy",
               "name": "m2statv",
-              "fill": "#1B5C64",
+              "fill": "#17202A",
               "textGrowth": "fixed-width",
               "width": 294,
               "content": "Ahamove G1",
               "fontFamily": "Inter",
-              "fontSize": 27,
+              "fontSize": 21,
               "fontWeight": "850"
             },
             {
@@ -4519,7 +4502,7 @@
               "fill": "#687385",
               "textGrowth": "fixed-width",
               "width": 294,
-              "content": "Current full-time role since Feb 2026",
+              "content": "Full-time since Feb 2026 — backend product delivery.",
               "fontFamily": "Inter",
               "fontSize": 13,
               "fontWeight": "normal"
@@ -4712,9 +4695,9 @@
           "name": "m2p1",
           "clip": true,
           "width": 334,
-          "height": 430,
+          "height": 500,
           "fill": "#FFFFFF",
-          "cornerRadius": 18,
+          "cornerRadius": 6,
           "stroke": {
             "align": "inside",
             "thickness": 1,
@@ -4738,33 +4721,151 @@
               "height": 132
             },
             {
-              "type": "text",
-              "id": "y35F7",
+              "type": "frame",
+              "id": "eSCoG",
               "x": 22,
-              "y": 158,
-              "name": "m2p1h",
-              "fill": "#17202A",
-              "textGrowth": "fixed-width",
+              "y": 156,
+              "name": "m2p1body",
               "width": 290,
-              "content": "SMAP",
-              "fontFamily": "Inter",
-              "fontSize": 23,
-              "fontWeight": "850"
-            },
-            {
-              "type": "text",
-              "id": "QFR64",
-              "x": 22,
-              "y": 202,
-              "name": "m2p1b",
-              "fill": "#687385",
-              "textGrowth": "fixed-width",
-              "width": 290,
-              "content": "Distributed analytics platform with Go, FastAPI workers, queues, data stores, object storage, Docker, and Kubernetes.",
-              "lineHeight": 1.45,
-              "fontFamily": "Inter",
-              "fontSize": 14,
-              "fontWeight": "normal"
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Zgimw",
+                  "fill": "#1B5C64",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "CASE 01 — SMAP · 2025",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 11,
+                  "fontWeight": "800",
+                  "letterSpacing": 0.6
+                },
+                {
+                  "type": "text",
+                  "id": "dgD5B",
+                  "fill": "#17202A",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Distributed analytics platform",
+                  "lineHeight": 1.15,
+                  "fontFamily": "Fraunces",
+                  "fontSize": 23,
+                  "fontWeight": "900"
+                },
+                {
+                  "type": "frame",
+                  "id": "d154fy",
+                  "name": "m1r1",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "NgnQO",
+                      "fill": "#687385",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "SITUATION",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 9.5,
+                      "fontWeight": "800",
+                      "letterSpacing": 0.6
+                    },
+                    {
+                      "type": "text",
+                      "id": "s0GNJ",
+                      "fill": "#17202A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Build scalable analytics backend with parallel workers.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "d4ME1",
+                  "name": "m1r2",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "jViCh",
+                      "fill": "#687385",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "STACK",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 9.5,
+                      "fontWeight": "800",
+                      "letterSpacing": 0.6
+                    },
+                    {
+                      "type": "text",
+                      "id": "kG9zy",
+                      "fill": "#17202A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Go · FastAPI · RabbitMQ · Redis · Postgres · MongoDB · MinIO · Docker · K8s",
+                      "lineHeight": 1.5,
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "D3Gz3",
+                  "name": "m1r3",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "BhujB",
+                      "fill": "#687385",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "OUTCOME",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 9.5,
+                      "fontWeight": "800",
+                      "letterSpacing": 0.6
+                    },
+                    {
+                      "type": "text",
+                      "id": "nnquC",
+                      "fill": "#17202A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Containerized services, queue-driven workers, object storage on homelab cluster.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "uCNCo",
+                  "fill": "#C9822B",
+                  "content": "View repo →",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "800"
+                }
+              ]
             }
           ]
         },
@@ -4772,13 +4873,13 @@
           "type": "frame",
           "id": "iWXIl",
           "x": 28,
-          "y": 2448,
+          "y": 2518,
           "name": "m2p2",
           "clip": true,
           "width": 334,
-          "height": 410,
+          "height": 500,
           "fill": "#FFFFFF",
-          "cornerRadius": 18,
+          "cornerRadius": 6,
           "stroke": {
             "align": "inside",
             "thickness": 1,
@@ -4802,33 +4903,151 @@
               "height": 132
             },
             {
-              "type": "text",
-              "id": "CXhf2",
+              "type": "frame",
+              "id": "ehXo5",
               "x": 22,
-              "y": 158,
-              "name": "m2p2h",
-              "fill": "#17202A",
-              "textGrowth": "fixed-width",
+              "y": 156,
+              "name": "m2p2body",
               "width": 290,
-              "content": "Kanban",
-              "fontFamily": "Inter",
-              "fontSize": 23,
-              "fontWeight": "850"
-            },
-            {
-              "type": "text",
-              "id": "Uozkf",
-              "x": 22,
-              "y": 202,
-              "name": "m2p2b",
-              "fill": "#687385",
-              "textGrowth": "fixed-width",
-              "width": 290,
-              "content": "Real-time collaboration with Go API, Next.js, PostgreSQL, MinIO, and WebSocket sync.",
-              "lineHeight": 1.45,
-              "fontFamily": "Inter",
-              "fontSize": 14,
-              "fontWeight": "normal"
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "RBG6Z",
+                  "fill": "#1B5C64",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "CASE 02 — KANBAN · 2024",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 11,
+                  "fontWeight": "800",
+                  "letterSpacing": 0.6
+                },
+                {
+                  "type": "text",
+                  "id": "G5shga",
+                  "fill": "#17202A",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Real-time collaboration board",
+                  "lineHeight": 1.15,
+                  "fontFamily": "Fraunces",
+                  "fontSize": 23,
+                  "fontWeight": "900"
+                },
+                {
+                  "type": "frame",
+                  "id": "aJYYd",
+                  "name": "m2r1",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HCGjx",
+                      "fill": "#687385",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "SITUATION",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 9.5,
+                      "fontWeight": "800",
+                      "letterSpacing": 0.6
+                    },
+                    {
+                      "type": "text",
+                      "id": "MJwc0",
+                      "fill": "#17202A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Multi-user board needing live state sync, attachments, and persistence.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kbkig",
+                  "name": "m2r2",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Z49flz",
+                      "fill": "#687385",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "STACK",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 9.5,
+                      "fontWeight": "800",
+                      "letterSpacing": 0.6
+                    },
+                    {
+                      "type": "text",
+                      "id": "Ghv2L",
+                      "fill": "#17202A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Go · Next.js · PostgreSQL · MinIO · WebSocket",
+                      "lineHeight": 1.5,
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "jlegl",
+                  "name": "m2r3",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "V2S9e6",
+                      "fill": "#687385",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "OUTCOME",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 9.5,
+                      "fontWeight": "800",
+                      "letterSpacing": 0.6
+                    },
+                    {
+                      "type": "text",
+                      "id": "DoPqm",
+                      "fill": "#17202A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Backend events bridge socket clients to stored state with conflict-safe ordering.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "r37hcF",
+                  "fill": "#C9822B",
+                  "content": "View repo →",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "800"
+                }
+              ]
             }
           ]
         },
@@ -4845,21 +5064,6 @@
           "fontFamily": "JetBrains Mono",
           "fontSize": 12,
           "fontWeight": "850"
-        },
-        {
-          "type": "text",
-          "id": "j5NQPz",
-          "x": 28,
-          "y": 3150,
-          "name": "m2skillb",
-          "fill": "#687385",
-          "textGrowth": "fixed-width",
-          "width": 334,
-          "content": "Golang / Gin / Kubernetes / Docker / RabbitMQ / Redis / PostgreSQL / MongoDB / AWS / Terraform / Ansible / FastAPI",
-          "lineHeight": 1.7,
-          "fontFamily": "Inter",
-          "fontSize": 16,
-          "fontWeight": "normal"
         },
         {
           "type": "frame",
@@ -4882,7 +5086,7 @@
               "fill": "#F7F5EF",
               "textGrowth": "fixed-width",
               "width": 280,
-              "content": "Contact",
+              "content": "Direct line.",
               "fontFamily": "Fraunces",
               "fontSize": 34,
               "fontWeight": "900"
@@ -4896,11 +5100,317 @@
               "fill": "#D9D2C5",
               "textGrowth": "fixed-width",
               "width": 280,
-              "content": "nguyentantai.dev@gmail.com / linkedin.com/in/ngtantai2104",
+              "content": "nguyentantai.dev@gmail.com",
               "lineHeight": 1.55,
               "fontFamily": "Inter",
               "fontSize": 14,
               "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "Aca6U",
+              "x": 26,
+              "y": 184,
+              "name": "m2cbtn1",
+              "width": 140,
+              "height": 46,
+              "fill": "#C9822B",
+              "cornerRadius": 10,
+              "gap": 8,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xJ4KC",
+                  "fill": "#17202A",
+                  "content": "Send email",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qsAUC",
+              "x": 174,
+              "y": 184,
+              "name": "m2cbtn2",
+              "width": 140,
+              "height": 46,
+              "cornerRadius": 10,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#C9822B"
+              },
+              "gap": 8,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ppKya",
+                  "fill": "#C9822B",
+                  "content": "LinkedIn",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "g6Gzyi",
+              "x": 26,
+              "y": 250,
+              "fill": "#9BA098",
+              "textGrowth": "fixed-width",
+              "width": 280,
+              "content": "linkedin.com/in/ngtantai2104",
+              "lineHeight": 1.4,
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "cornerRadius": 2,
+          "id": "X7CEPw",
+          "x": 28,
+          "y": 416,
+          "name": "m2portrait",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "public/avatar.jpg",
+            "mode": "fill"
+          },
+          "width": 334,
+          "height": 248
+        },
+        {
+          "type": "text",
+          "id": "jzYQy",
+          "x": 28,
+          "y": 678,
+          "name": "m2idx",
+          "fill": "#1B5C64",
+          "textGrowth": "fixed-width",
+          "width": 334,
+          "content": "ENTRY 01 — Feb 2026",
+          "fontFamily": "JetBrains Mono",
+          "fontSize": 11,
+          "fontWeight": "800",
+          "letterSpacing": 0.6
+        },
+        {
+          "type": "text",
+          "id": "vqdvf",
+          "x": 28,
+          "y": 698,
+          "name": "m2metaline",
+          "fill": "#17202A",
+          "textGrowth": "fixed-width",
+          "width": 334,
+          "content": "Software Engineer · G1 · Ahamove · Ho Chi Minh, VN",
+          "lineHeight": 1.4,
+          "fontFamily": "Inter",
+          "fontSize": 13,
+          "fontWeight": "700"
+        },
+        {
+          "type": "frame",
+          "id": "z4TFi1",
+          "x": 28,
+          "y": 3150,
+          "name": "m2stackgrid",
+          "width": 334,
+          "layout": "vertical",
+          "gap": 10,
+          "children": [
+            {
+              "type": "frame",
+              "id": "ZcB3N",
+              "name": "mc1",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 6,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#D8D0C2"
+              },
+              "layout": "vertical",
+              "gap": 6,
+              "padding": [
+                14,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "cQf2Y",
+                  "fill": "#1B5C64",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "LANGUAGES",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 10,
+                  "fontWeight": "800",
+                  "letterSpacing": 0.6
+                },
+                {
+                  "type": "text",
+                  "id": "xpVok",
+                  "fill": "#17202A",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Go · TypeScript · Python",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "vNgKj",
+              "name": "mc2",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 6,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#D8D0C2"
+              },
+              "layout": "vertical",
+              "gap": 6,
+              "padding": [
+                14,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "rCFSw",
+                  "fill": "#1B5C64",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "BACKEND",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 10,
+                  "fontWeight": "800",
+                  "letterSpacing": 0.6
+                },
+                {
+                  "type": "text",
+                  "id": "AO8bR",
+                  "fill": "#17202A",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Gin · FastAPI · Next.js · gRPC",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "c0Bo4w",
+              "name": "mc3",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 6,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#D8D0C2"
+              },
+              "layout": "vertical",
+              "gap": 6,
+              "padding": [
+                14,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "hedrf",
+                  "fill": "#1B5C64",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "INFRASTRUCTURE",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 10,
+                  "fontWeight": "800",
+                  "letterSpacing": 0.6
+                },
+                {
+                  "type": "text",
+                  "id": "t66la",
+                  "fill": "#17202A",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Kubernetes · Docker · Terraform · Ansible · AWS",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "s3OKL",
+              "name": "mc4",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 6,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#D8D0C2"
+              },
+              "layout": "vertical",
+              "gap": 6,
+              "padding": [
+                14,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "g2tgu",
+                  "fill": "#1B5C64",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "DATA & MESSAGING",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 10,
+                  "fontWeight": "800",
+                  "letterSpacing": 0.6
+                },
+                {
+                  "type": "text",
+                  "id": "K33zg",
+                  "fill": "#17202A",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Postgres · MongoDB · Redis · RabbitMQ · MinIO · MQTT",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "800"
+                }
+              ]
             }
           ]
         }
