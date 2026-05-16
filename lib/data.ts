@@ -98,13 +98,13 @@ export const projects = [
     shortTitle: "SMAP",
     image: "/social-media-analytics-dashboard-dark.png",
     situation:
-      "Build a scalable social listening backend that turns raw YouTube, TikTok, and Facebook data into useful insights.",
+      "Build a social analytics platform that ingests crawl events, enriches mentions with NLP and AI, and turns raw social data into searchable insights.",
     stack:
-      "Go · FastAPI · RabbitMQ · Redis · Postgres · MongoDB · MinIO · Docker · K8s",
+      "Go · Python/FastAPI · Kafka/RabbitMQ · Redis · Postgres · MongoDB · MinIO · Qdrant · K8s",
     outcome:
-      "Containerized services, queue-driven workers, object storage, retry patterns, idempotency, failure isolation, and horizontal deployment on a homelab cluster.",
-    repoUrl: "https://github.com/nguyentantai21042004/analytics_engine",
-    secondaryRepoUrl: "https://github.com/nguyentantai21042004/speech-to-text",
+      "Microservices across identity, project, ingest, analytics, knowledge, notification, and UI surfaces with event pipelines, vector search, object storage, trace propagation, and homelab Kubernetes deployment.",
+    repoUrl: "https://github.com/smap-hcmut/report",
+    secondaryRepoUrl: "https://github.com/smap-hcmut/analysis-srv",
     liveUrl: "https://smap.tantai.dev",
   },
   {
@@ -127,7 +127,7 @@ export const stackGroups = [
   { label: "LANGUAGES", value: "Go · TypeScript · Python" },
   { label: "BACKEND", value: "Gin · FastAPI · Next.js · REST · gRPC" },
   { label: "INFRASTRUCTURE", value: "Kubernetes · Docker · Terraform · Ansible · AWS" },
-  { label: "DATA & MESSAGING", value: "Postgres · MongoDB · Redis · RabbitMQ · MinIO · MQTT" },
+  { label: "DATA & MESSAGING", value: "Postgres · MongoDB · Redis · Kafka · RabbitMQ · MinIO · Qdrant · MQTT" },
 ];
 
 export const credentials = [

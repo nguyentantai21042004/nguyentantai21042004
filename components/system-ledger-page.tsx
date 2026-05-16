@@ -21,7 +21,7 @@ import {
   stackGroups,
 } from "@/lib/data";
 
-const sectionShell = "mx-auto w-full max-w-[1248px] px-6 sm:px-8 lg:px-0";
+const sectionShell = "mx-auto w-full max-w-[1248px] px-6 sm:px-8 xl:px-0";
 
 function SectionHeading({
   id,
@@ -92,7 +92,7 @@ function Header() {
   return (
     <header className="sticky top-0 z-30 border-b border-ledger-line/70 bg-ledger-paper/92 backdrop-blur-md">
       <nav className={`${sectionShell} flex h-[72px] items-center justify-between`}>
-        <a href="#" className="text-sm font-black text-ledger-ink" aria-label="Back to top">
+        <a href="#" className="inline-flex min-h-11 items-center text-sm font-black text-ledger-ink" aria-label="Back to top">
           {profile.shortName}
         </a>
         <div className="hidden items-center gap-8 md:flex">
@@ -100,7 +100,7 @@ function Header() {
             <a
               key={item.href}
               href={item.href}
-              className="text-xs font-bold text-ledger-muted transition-colors hover:text-ledger-teal"
+              className="inline-flex min-h-11 min-w-11 items-center justify-center text-xs font-bold text-ledger-muted transition-colors hover:text-ledger-teal"
             >
               {item.label}
             </a>
@@ -121,15 +121,15 @@ function Header() {
 
 function Hero() {
   return (
-    <section className={`${sectionShell} grid gap-14 pb-28 pt-20 lg:grid-cols-[760px_374px] lg:gap-8 lg:pb-44 lg:pt-20`}>
+    <section className={`${sectionShell} grid gap-14 pb-24 pt-16 min-[380px]:pb-28 min-[380px]:pt-20 lg:grid-cols-[minmax(0,1fr)_minmax(320px,374px)] lg:gap-8 lg:pb-40 lg:pt-20 xl:grid-cols-[760px_374px] xl:pb-44`}>
       <div>
         <p className="font-mono text-xs font-extrabold tracking-normal text-ledger-teal sm:text-[13px]">
           {profile.roleEyebrow}
         </p>
-        <h1 className="mt-8 max-w-[760px] font-serif text-[44px] font-black leading-[0.98] text-ledger-ink sm:text-6xl lg:text-[74px]">
+        <h1 className="mt-8 max-w-[760px] font-serif text-[40px] font-black leading-[0.98] text-ledger-ink min-[380px]:text-[44px] sm:text-6xl lg:text-[64px] xl:text-[74px]">
           {profile.headline}
         </h1>
-        <p className="mt-9 max-w-[626px] text-base leading-8 text-ledger-muted sm:text-[19px]">
+        <p className="mt-9 max-w-[626px] text-[15px] leading-7 text-ledger-muted min-[380px]:text-base min-[380px]:leading-8 sm:text-[19px]">
           {profile.intro}
         </p>
         <div className="mt-8 flex items-center gap-2 text-sm font-semibold text-ledger-muted">
@@ -172,13 +172,13 @@ function Hero() {
 
 function RoleSnapshot() {
   return (
-    <section id="ledger" className={`${sectionShell} pb-36`}>
+    <section id="ledger" className={`${sectionShell} scroll-mt-28 pb-28 sm:pb-36`}>
       <SectionHeading id="role-snapshot" index="01" eyebrow="ROLE SNAPSHOT" title="Proof before polish" />
       <p className="mt-8 max-w-[600px] text-[15px] leading-7 text-ledger-muted">
         A recruiter should understand the current role, core stack, and strongest projects in the
         first 30 seconds.
       </p>
-      <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-10 grid gap-6 sm:mt-16 sm:grid-cols-2 lg:grid-cols-4">
         {snapshotCards.map((card) => (
           <article
             key={card.label}
@@ -196,14 +196,14 @@ function RoleSnapshot() {
 
 function Experience() {
   return (
-    <section className={`${sectionShell} pb-36`}>
+    <section className={`${sectionShell} pb-28 sm:pb-36`}>
       <SectionHeading
         id="experience"
         index="02"
         eyebrow="EXPERIENCE"
         title="A concise engineering ledger"
       />
-      <div className="mt-16 space-y-6">
+      <div className="mt-10 space-y-6 sm:mt-16">
         {experiences.map((experience) => (
           <article
             key={`${experience.period}-${experience.title}`}
@@ -298,14 +298,14 @@ function ProjectCard({ project }: { project: (typeof projects)[number] }) {
 
 function Projects() {
   return (
-    <section className={`${sectionShell} pb-36`}>
+    <section className={`${sectionShell} pb-28 sm:pb-36`}>
       <SectionHeading
         id="projects"
         index="03"
         eyebrow="PROJECT EVIDENCE"
         title="Projects shown as working systems"
       />
-      <div className="mt-16 grid gap-8 lg:grid-cols-2">
+      <div className="mt-10 grid gap-8 sm:mt-16 lg:grid-cols-2">
         {projects.map((project) => (
           <ProjectCard key={project.caseLabel} project={project} />
         ))}
@@ -316,9 +316,9 @@ function Projects() {
 
 function Stack() {
   return (
-    <section className={`${sectionShell} pb-36`}>
+    <section className={`${sectionShell} pb-28 sm:pb-36`}>
       <SectionHeading id="stack" index="04" eyebrow="STACK" title="Stack grouped by surface" />
-      <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-10 grid gap-4 sm:mt-14 sm:grid-cols-2 lg:grid-cols-4">
         {stackGroups.map((group) => (
           <article key={group.label} className="rounded-[20px] border border-ledger-line bg-white p-6">
             <p className="font-mono text-[10px] font-extrabold text-ledger-teal">{group.label}</p>
@@ -340,9 +340,9 @@ function Stack() {
 
 function Contact() {
   return (
-    <section id="contact" className={`${sectionShell} pb-20`}>
+    <section id="contact" className={`${sectionShell} scroll-mt-28 pb-20`}>
       <div className="rounded-[30px] bg-ledger-ink p-8 text-ledger-paper sm:p-12 lg:px-[52px] lg:py-14">
-        <h2 className="max-w-[620px] font-serif text-[34px] font-black leading-tight sm:text-[42px]">
+        <h2 className="max-w-[620px] font-serif text-[30px] font-black leading-tight min-[380px]:text-[34px] sm:text-[42px]">
           Direct line for backend work.
         </h2>
         <p className="mt-7 text-base text-[#d9d2c5]">{profile.email}</p>
