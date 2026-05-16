@@ -1,38 +1,62 @@
 import type React from "react";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
+import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-fraunces",
+  display: "swap",
+});
+
+const jetBrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains-mono",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
-  title: "Nguyễn Tấn Tài | Software Engineer",
+  metadataBase: new URL("https://tantai.dev"),
+  title: "Nguyen Tan Tai | Backend Engineer",
   description:
-    "Software Engineer specializing in Golang microservices, Cloud-Native Engineering, Kubernetes, and distributed systems. Based in Ho Chi Minh City, Vietnam.",
+    "System-ledger portfolio for Nguyen Tan Tai, Software Engineer G1 at Ahamove, focused on Go services, cloud-native infrastructure, and backend product delivery.",
   keywords: [
+    "Nguyen Tan Tai",
+    "Backend Engineer",
     "Software Engineer",
+    "Ahamove",
     "Golang",
-    "Backend Developer",
-    "Cloud-Native",
+    "Go",
+    "Cloud Native",
     "Kubernetes",
-    "DevOps",
     "Vietnam",
   ],
-  authors: [{ name: "Nguyễn Tấn Tài" }],
+  authors: [{ name: "Nguyen Tan Tai" }],
   openGraph: {
-    title: "Nguyễn Tấn Tài | Software Engineer",
+    title: "Nguyen Tan Tai | Backend Engineer",
     description:
-      "Software Engineer specializing in Golang microservices and Cloud-Native Engineering",
+      "Go services, cloud-native infrastructure, project evidence, and production backend experience.",
     type: "website",
     locale: "vi_VN",
+    images: [
+      {
+        url: "/avatar.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Nguyen Tan Tai",
+      },
+    ],
   },
   icons: {
     icon: "/favicon.png",
     apple: "/favicon.png",
   },
-  generator: "v0.app",
 };
 
 export default function RootLayout({
@@ -41,10 +65,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="vi">
-      <body className={`font-sans antialiased`}>
+    <html lang="en">
+      <body
+        className={`${inter.variable} ${fraunces.variable} ${jetBrainsMono.variable} font-sans antialiased`}
+      >
         {children}
-        <Analytics />
       </body>
     </html>
   );
