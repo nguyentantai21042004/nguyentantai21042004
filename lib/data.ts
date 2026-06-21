@@ -65,6 +65,18 @@ export const experiences = [
     stack: ["Golang", "Backend APIs", "Operational reliability", "Product delivery"],
   },
   {
+    period: "Oct 2025 - Dec 2025",
+    title: "Backend Developer (Part-time) - ROBO-HI VIET NAM",
+    summary:
+      "Worked on robot dispatcher communication and AWS-backed services for IoT command handling.",
+    details: [
+      "Improved MQTT-based communication by enhancing connection handling for multiple robot clients and command flows.",
+      "Evaluated ROS 2 Humble and ROS 1 as alternatives to Redis Pub/Sub for robot message exchange.",
+      "Contributed to distributed command dispatching logic for multiple robot types and fleets.",
+    ],
+    stack: ["AWS", "MQTT", "Node.js", "TypeScript", "Golang", "ROS 1", "ROS 2"],
+  },
+  {
     period: "Aug 2024 - Sep 2025",
     title: "Backend Developer (Part-time) - TANCA.,JSC",
     summary:
@@ -77,32 +89,47 @@ export const experiences = [
     ],
     stack: ["Go", "Gin", "MongoDB", "RabbitMQ", "Jenkins", "Rancher", "Kubernetes"],
   },
-  {
-    period: "Oct 2025 - Dec 2025",
-    title: "Backend Developer (Part-time) - ROBO-HI VIET NAM",
-    summary:
-      "Worked on robot dispatcher communication and AWS-backed services for IoT command handling.",
-    details: [
-      "Improved MQTT-based communication by enhancing connection handling for multiple robot clients and command flows.",
-      "Evaluated ROS 2 Humble and ROS 1 as alternatives to Redis Pub/Sub for robot message exchange.",
-      "Contributed to distributed command dispatching logic for multiple robot types and fleets.",
-    ],
-    stack: ["AWS", "MQTT", "Node.js", "TypeScript", "Golang", "ROS 1", "ROS 2"],
-  },
 ];
 
-export const projects = [
+export type Project = {
+  caseLabel: string;
+  title: string;
+  shortTitle: string;
+  image?: string;
+  thesis?: boolean;
+  services?: string[];
+  situation: string;
+  stack: string;
+  outcome: string;
+  repoUrl: string;
+  secondaryRepoUrl?: string;
+  liveUrl?: string;
+};
+
+export const projects: Project[] = [
   {
-    caseLabel: "CASE 01 — SMAP · 2025",
-    title: "Distributed analytics platform",
+    caseLabel: "CASE 01 — GRADUATION THESIS · HCMUT 2025-2026",
+    title: "SMAP — Distributed social analytics platform",
     shortTitle: "SMAP",
     image: "/social-media-analytics-dashboard-dark.png",
+    thesis: true,
+    services: [
+      "identity-srv",
+      "project-srv",
+      "ingest-srv",
+      "analysis-srv",
+      "knowledge-srv",
+      "notification-srv",
+      "scraper-srv",
+      "shared-libs",
+      "web-ui",
+    ],
     situation:
-      "Build a social analytics platform that ingests crawl events, enriches mentions with NLP and AI, and turns raw social data into searchable insights.",
+      "Capstone project for the HCMUT Computer Science degree. Build a social analytics platform that ingests crawl events, enriches mentions with NLP and AI, and turns raw social data into searchable insights.",
     stack:
       "Go · Python/FastAPI · Kafka/RabbitMQ · Redis · Postgres · MongoDB · MinIO · Qdrant · K8s",
     outcome:
-      "Microservices across identity, project, ingest, analytics, knowledge, notification, and UI surfaces with event pipelines, vector search, object storage, trace propagation, and homelab Kubernetes deployment.",
+      "9 microservices split by domain, with event pipelines, vector search, object storage, trace propagation, and homelab Kubernetes deployment. Defended June 2026.",
     repoUrl: "https://github.com/smap-hcmut/report",
     secondaryRepoUrl: "https://github.com/smap-hcmut/analysis-srv",
     liveUrl: "https://smap.tantai.dev",
@@ -120,6 +147,17 @@ export const projects = [
     repoUrl: "https://github.com/nguyentantai21042004/kanban-api",
     secondaryRepoUrl: "https://github.com/nguyentantai21042004/kanban-web",
     liveUrl: "https://kanban.tantai.dev",
+  },
+  {
+    caseLabel: "CASE 03 — CAPTION FLOW · 2026",
+    title: "Apple Silicon video subtitle + summary pipeline",
+    shortTitle: "Caption Flow",
+    situation:
+      "Automated video processing pipeline that transcribes audio with Whisper, burns subtitles via FFmpeg (VideoToolbox), and summarizes transcripts into Vietnamese DOCX using DeepSeek with Gemini fallback.",
+    stack: "Go · FFmpeg · whisper.cpp · DeepSeek · Gemini · Metal",
+    outcome:
+      "Watch, batch, and summarize modes with hardware-accelerated encoding on Apple Silicon, rate limiting via key rotation and exponential backoff, structured logging, and automatic temp cleanup. Under 0.3x realtime on M4 Pro.",
+    repoUrl: "https://github.com/nguyentantai21042004/caption-flow",
   },
 ];
 
