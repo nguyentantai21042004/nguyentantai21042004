@@ -1,0 +1,89 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#0A0F16"/>
+  <defs>
+    <pattern id="grid-winnow" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#1E293B" opacity="0.7"/>
+    </pattern>
+    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="450" fill="url(#grid-winnow)"/>
+
+  <!-- Main App Shell -->
+  <rect x="40" y="32" width="720" height="386" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+  <rect x="40" y="32" width="720" height="44" rx="12" fill="#131C31" stroke="#334155" stroke-width="1"/>
+  <circle cx="68" cy="54" r="5.5" fill="#EF4444"/>
+  <circle cx="86" cy="54" r="5.5" fill="#F59E0B"/>
+  <circle cx="104" cy="54" r="5.5" fill="#10B981"/>
+
+  <text x="130" y="58" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">WINNOW // DISTRIBUTED TECHNICAL READING WAREHOUSE</text>
+  
+  <rect x="560" y="44" width="184" height="22" rx="11" fill="#062E3B" stroke="#0284C7" stroke-width="1"/>
+  <circle cx="574" cy="55" r="3.5" fill="#38BDF8"/>
+  <text x="586" y="59" fill="#7DD3FC" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">CF QUEUES + PGVECTOR</text>
+
+  <!-- Left: Ingestion & Vector Pipeline -->
+  <rect x="64" y="96" width="320" height="300" rx="8" fill="#0B111D" stroke="#1E293B" stroke-width="1"/>
+  <text x="82" y="124" fill="#64748B" font-family="ui-monospace, monospace" font-size="11" font-weight="700" letter-spacing="1">DISTRIBUTED INGESTION PIPELINE</text>
+
+  <rect x="82" y="142" width="284" height="40" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+  <text x="96" y="167" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="11.5" font-weight="600">Cloudflare Workers Edge (Hono)</text>
+  
+  <path d="M 224 182 L 224 196" stroke="#475569" stroke-width="2" stroke-dasharray="3 3"/>
+
+  <rect x="82" y="196" width="284" height="40" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+  <text x="96" y="221" fill="#38BDF8" font-family="ui-monospace, monospace" font-size="11.5" font-weight="600">Cloudflare Queues (Async Triage)</text>
+
+  <path d="M 224 236 L 224 250" stroke="#475569" stroke-width="2" stroke-dasharray="3 3"/>
+
+  <rect x="82" y="250" width="284" height="66" rx="6" fill="#172033" stroke="#0284C7" stroke-width="1"/>
+  <text x="96" y="272" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="11.5" font-weight="600">Dual Neon Postgres Stores</text>
+  <text x="96" y="290" fill="#38BDF8" font-family="ui-monospace, monospace" font-size="10">CORE DB: 25 relational tables &amp; telemetry</text>
+  <text x="96" y="305" fill="#10B981" font-family="ui-monospace, monospace" font-size="10">VECTOR DB: HNSW cosine distance index</text>
+
+  <rect x="82" y="332" width="284" height="48" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+  <text x="96" y="352" fill="#F59E0B" font-family="ui-monospace, monospace" font-size="11" font-weight="600">arXiv LaTeX + Citation Graph</text>
+  <text x="96" y="368" fill="#94A3B8" font-family="ui-monospace, monospace" font-size="9.5">Python pipeline · 100% triage · Top 5% deep read</text>
+
+  <!-- Right: Knowledge Graph & Article Preview -->
+  <rect x="404" y="96" width="332" height="300" rx="8" fill="#0B111D" stroke="#1E293B" stroke-width="1"/>
+  <text x="422" y="124" fill="#64748B" font-family="ui-monospace, monospace" font-size="11" font-weight="700" letter-spacing="1">SEMANTIC GRAPH &amp; METRICS</text>
+
+  <!-- Stat Counters -->
+  <rect x="422" y="142" width="140" height="54" rx="6" fill="#131C31" stroke="#25344D" stroke-width="1"/>
+  <text x="434" y="162" fill="#64748B" font-family="ui-monospace, monospace" font-size="10">CORE SCHEMA</text>
+  <text x="434" y="186" fill="#38BDF8" font-family="ui-monospace, monospace" font-size="19" font-weight="700">25 Tables</text>
+
+  <rect x="576" y="142" width="144" height="54" rx="6" fill="#131C31" stroke="#25344D" stroke-width="1"/>
+  <text x="588" y="162" fill="#64748B" font-family="ui-monospace, monospace" font-size="10">SEARCH RECALL</text>
+  <text x="588" y="186" fill="#10B981" font-family="ui-monospace, monospace" font-size="19" font-weight="700">&lt;15 ms</text>
+
+  <!-- Knowledge Cluster Visual -->
+  <rect x="422" y="210" width="298" height="170" rx="6" fill="#080D14" stroke="#1E293B" stroke-width="1"/>
+
+  <!-- Graph Nodes -->
+  <line x1="470" y1="280" x2="540" y2="250" stroke="#0284C7" stroke-width="1.5" opacity="0.6"/>
+  <line x1="540" y1="250" x2="620" y2="270" stroke="#0284C7" stroke-width="1.5" opacity="0.6"/>
+  <line x1="540" y1="250" x2="570" y2="330" stroke="#10B981" stroke-width="1.5" opacity="0.6"/>
+  <line x1="470" y1="280" x2="500" y2="340" stroke="#38BDF8" stroke-width="1.5" opacity="0.6"/>
+  <line x1="500" y1="340" x2="570" y2="330" stroke="#10B981" stroke-width="1.5" opacity="0.6"/>
+  <line x1="620" y1="270" x2="670" y2="310" stroke="#F59E0B" stroke-width="1.5" opacity="0.6"/>
+
+  <circle cx="470" cy="280" r="16" fill="#0F2B48" stroke="#38BDF8" stroke-width="2"/>
+  <text x="458" y="284" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="10">RAG</text>
+
+  <circle cx="540" cy="250" r="22" fill="#073B3A" stroke="#10B981" stroke-width="2"/>
+  <text x="522" y="254" fill="#A7F3D0" font-family="ui-monospace, monospace" font-size="11" font-weight="700">VECTOR</text>
+
+  <circle cx="620" cy="270" r="18" fill="#172554" stroke="#38BDF8" stroke-width="2"/>
+  <text x="606" y="274" fill="#BFDBFE" font-family="ui-monospace, monospace" font-size="10">arXiv</text>
+
+  <circle cx="500" cy="340" r="14" fill="#312E81" stroke="#818CF8" stroke-width="2"/>
+  <circle cx="570" cy="330" r="16" fill="#064E3B" stroke="#34D399" stroke-width="2"/>
+  <circle cx="670" cy="310" r="12" fill="#78350F" stroke="#F59E0B" stroke-width="2"/>
+
+  <text x="434" y="368" fill="#64748B" font-family="ui-monospace, monospace" font-size="9.5">HNSW COSINE INDEX · SUBGRAPH TRAVERSAL</text>
+</svg>

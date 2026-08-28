@@ -1,0 +1,126 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#0A0F16"/>
+
+  <!-- Subtle Grid Pattern -->
+  <defs>
+    <pattern id="grid-kanban" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1E293B" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+    <linearGradient id="cardGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="450" fill="url(#grid-kanban)"/>
+
+  <!-- Main Window Frame -->
+  <rect x="40" y="28" width="720" height="394" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+  
+  <!-- Header Bar -->
+  <rect x="40" y="28" width="720" height="42" rx="12" fill="#131C31" stroke="#334155" stroke-width="1"/>
+  <circle cx="66" cy="49" r="5" fill="#EF4444"/>
+  <circle cx="82" cy="49" r="5" fill="#F59E0B"/>
+  <circle cx="98" cy="49" r="5" fill="#10B981"/>
+
+  <text x="122" y="53" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="0.5">KANBAN // REAL-TIME WEBSOCKET COLLABORATION ENGINE</text>
+  
+  <!-- Live Sync Badge -->
+  <rect x="560" y="38" width="184" height="22" rx="11" fill="#063E32" stroke="#059669" stroke-width="1"/>
+  <circle cx="574" cy="49" r="3.5" fill="#10B981"/>
+  <text x="586" y="53" fill="#6EE7B7" font-family="ui-monospace, monospace" font-size="10" font-weight="700">WS BROADCAST · 0ms LAG</text>
+
+  <!-- Left 2/3: Kanban Board Columns -->
+  <!-- Column 1: BACKLOG -->
+  <rect x="58" y="86" width="156" height="318" rx="8" fill="#0B111D" stroke="#1E293B" stroke-width="1"/>
+  <rect x="66" y="96" width="8" height="8" rx="2" fill="#64748B"/>
+  <text x="82" y="104" fill="#94A3B8" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">BACKLOG</text>
+  <rect x="186" y="94" width="20" height="14" rx="4" fill="#1E293B"/>
+  <text x="193" y="105" fill="#64748B" font-family="ui-monospace, monospace" font-size="9" font-weight="700">2</text>
+
+  <!-- Card 1.1 -->
+  <rect x="66" y="118" width="140" height="74" rx="6" fill="#172236" stroke="#283A4E" stroke-width="1"/>
+  <rect x="74" y="126" width="56" height="15" rx="3" fill="#3B1D22"/>
+  <text x="80" y="137" fill="#F87171" font-family="ui-monospace, monospace" font-size="8.5" font-weight="700">P0 · CORE</text>
+  <text x="74" y="156" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600">PostgreSQL locks</text>
+  <text x="74" y="172" fill="#64748B" font-family="ui-monospace, monospace" font-size="8.5">SELECT FOR UPDATE</text>
+
+  <!-- Card 1.2 -->
+  <rect x="66" y="200" width="140" height="74" rx="6" fill="#172236" stroke="#283A4E" stroke-width="1"/>
+  <rect x="74" y="208" width="56" height="15" rx="3" fill="#1E293B"/>
+  <text x="80" y="219" fill="#94A3B8" font-family="ui-monospace, monospace" font-size="8.5" font-weight="700">P2 · ASYNC</text>
+  <text x="74" y="238" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600">Audit trail log</text>
+  <text x="74" y="254" fill="#64748B" font-family="ui-monospace, monospace" font-size="8.5">Worker goroutine</text>
+
+  <!-- Column 2: IN PROGRESS -->
+  <rect x="224" y="86" width="156" height="318" rx="8" fill="#0B111D" stroke="#0284C7" stroke-width="1.2"/>
+  <rect x="232" y="96" width="8" height="8" rx="2" fill="#38BDF8"/>
+  <text x="248" y="104" fill="#38BDF8" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">IN PROGRESS</text>
+  <rect x="352" y="94" width="20" height="14" rx="4" fill="#0C4A6E"/>
+  <text x="359" y="105" fill="#7DD3FC" font-family="ui-monospace, monospace" font-size="9" font-weight="700">3</text>
+
+  <!-- Active Card with Drag Indicator -->
+  <rect x="232" y="118" width="140" height="96" rx="6" fill="#0C253E" stroke="#0284C7" stroke-width="1.5"/>
+  <rect x="240" y="126" width="70" height="15" rx="3" fill="#0369A1"/>
+  <text x="246" y="137" fill="#E0F2FE" font-family="ui-monospace, monospace" font-size="8.5" font-weight="700">WEBSOCKET</text>
+  <text x="240" y="156" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5" font-weight="700">Broadcast channel</text>
+  <text x="240" y="172" fill="#7DD3FC" font-family="ui-monospace, monospace" font-size="8.5">goroutine pool · RWMutex</text>
+  <!-- Mini avatar stack -->
+  <circle cx="248" cy="196" r="8" fill="#0284C7"/>
+  <text x="244" y="199" fill="#FFF" font-size="8" font-weight="700">TT</text>
+  <circle cx="262" cy="196" r="8" fill="#10B981"/>
+  <text x="259" y="199" fill="#FFF" font-size="8" font-weight="700">G1</text>
+  <text x="278" y="199" fill="#64748B" font-family="ui-monospace, monospace" font-size="8.5">synced live</text>
+
+  <!-- Card 2.2 -->
+  <rect x="232" y="222" width="140" height="74" rx="6" fill="#172236" stroke="#283A4E" stroke-width="1"/>
+  <rect x="240" y="230" width="56" height="15" rx="3" fill="#3B2E15"/>
+  <text x="246" y="241" fill="#FBBF24" font-family="ui-monospace, monospace" font-size="8.5" font-weight="700">MINIO S3</text>
+  <text x="240" y="260" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600">Presigned upload</text>
+  <text x="240" y="276" fill="#64748B" font-family="ui-monospace, monospace" font-size="8.5">4.8 MB attachment</text>
+
+  <!-- Column 3: DONE -->
+  <rect x="390" y="86" width="156" height="318" rx="8" fill="#0B111D" stroke="#1E293B" stroke-width="1"/>
+  <rect x="398" y="96" width="8" height="8" rx="2" fill="#10B981"/>
+  <text x="414" y="104" fill="#34D399" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">DEPLOYED</text>
+  <rect x="518" y="94" width="20" height="14" rx="4" fill="#064E3B"/>
+  <text x="522" y="105" fill="#6EE7B7" font-family="ui-monospace, monospace" font-size="9" font-weight="700">12</text>
+
+  <!-- Card 3.1 -->
+  <rect x="398" y="118" width="140" height="74" rx="6" fill="#172236" stroke="#283A4E" stroke-width="1"/>
+  <text x="406" y="142" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600">Next.js 14 optimistic</text>
+  <text x="406" y="158" fill="#10B981" font-family="ui-monospace, monospace" font-size="8.5">Instant UI reorder</text>
+  <text x="406" y="174" fill="#64748B" font-family="ui-monospace, monospace" font-size="8.5">conflict rollback ready</text>
+
+  <!-- Card 3.2 -->
+  <rect x="398" y="200" width="140" height="74" rx="6" fill="#172236" stroke="#283A4E" stroke-width="1"/>
+  <text x="406" y="224" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600">JWT Authentication</text>
+  <text x="406" y="240" fill="#10B981" font-family="ui-monospace, monospace" font-size="8.5">Secure cookie store</text>
+  <text x="406" y="256" fill="#64748B" font-family="ui-monospace, monospace" font-size="8.5">OAuth2 provider link</text>
+
+  <!-- Right 1/3: Real-Time Architecture & Goroutine Telemetry -->
+  <rect x="556" y="86" width="188" height="318" rx="8" fill="#080D16" stroke="#1E293B" stroke-width="1"/>
+  <text x="570" y="110" fill="#64748B" font-family="ui-monospace, monospace" font-size="10" font-weight="700" letter-spacing="0.5">HUB &amp; BROADCAST BUS</text>
+
+  <!-- WS Hub Diagram Box -->
+  <rect x="570" y="122" width="160" height="80" rx="6" fill="#131C2D" stroke="#0284C7" stroke-width="1"/>
+  <text x="580" y="142" fill="#38BDF8" font-family="ui-monospace, monospace" font-size="10" font-weight="700">Go Hub Manager</text>
+  <text x="580" y="158" fill="#94A3B8" font-family="ui-monospace, monospace" font-size="8.5">Active Clients: 24</text>
+  <text x="580" y="172" fill="#10B981" font-family="ui-monospace, monospace" font-size="8.5">Fanout: 480 msg/sec</text>
+  <text x="580" y="188" fill="#F59E0B" font-family="ui-monospace, monospace" font-size="8.5">Latency: &lt; 2 ms</text>
+
+  <!-- Storage Engine Box -->
+  <rect x="570" y="212" width="160" height="80" rx="6" fill="#131C2D" stroke="#334155" stroke-width="1"/>
+  <text x="580" y="232" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="10" font-weight="700">Storage Layers</text>
+  <text x="580" y="248" fill="#38BDF8" font-family="ui-monospace, monospace" font-size="8.5">PostgreSQL 16 (State)</text>
+  <text x="580" y="262" fill="#F59E0B" font-family="ui-monospace, monospace" font-size="8.5">MinIO S3 (Attachments)</text>
+  <text x="580" y="278" fill="#10B981" font-family="ui-monospace, monospace" font-size="8.5">Redis (Pub/Sub Sync)</text>
+
+  <!-- Performance Metric Strip -->
+  <rect x="570" y="302" width="160" height="88" rx="6" fill="#162234" stroke="#1E293B" stroke-width="1"/>
+  <text x="580" y="322" fill="#64748B" font-family="ui-monospace, monospace" font-size="9">EVENT CONFLICTS</text>
+  <text x="580" y="342" fill="#10B981" font-family="ui-monospace, monospace" font-size="16" font-weight="700">0 Lost Updates</text>
+  <text x="580" y="362" fill="#94A3B8" font-family="ui-monospace, monospace" font-size="8.5">Versioned state checks</text>
+  <text x="580" y="376" fill="#64748B" font-family="ui-monospace, monospace" font-size="8">OPTIMISTIC RECONCILIATION</text>
+</svg>

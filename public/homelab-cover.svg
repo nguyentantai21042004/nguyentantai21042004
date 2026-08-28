@@ -1,0 +1,71 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#0C111A"/>
+  <!-- Window Frame -->
+  <rect x="40" y="32" width="720" height="386" rx="12" fill="#111928" stroke="#1F2A3F" stroke-width="1.5"/>
+  <rect x="40" y="32" width="720" height="44" rx="12" fill="#182236" stroke="#1F2A3F" stroke-width="1"/>
+  <circle cx="68" cy="54" r="5.5" fill="#EF4444"/>
+  <circle cx="86" cy="54" r="5.5" fill="#F59E0B"/>
+  <circle cx="104" cy="54" r="5.5" fill="#10B981"/>
+
+  <text x="130" y="58" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">HOMELAB IAC // ESXI BARE-METAL, TERRAFORM &amp; KUBERNETES</text>
+  
+  <rect x="560" y="44" width="184" height="22" rx="11" fill="#063E32" stroke="#059669" stroke-width="1"/>
+  <circle cx="574" cy="55" r="3.5" fill="#10B981"/>
+  <text x="586" y="59" fill="#6EE7B7" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">100% AUTOMATED IAC</text>
+
+  <!-- Left: Rack Infrastructure Topology -->
+  <rect x="64" y="96" width="310" height="300" rx="8" fill="#080D18" stroke="#1F2A3F" stroke-width="1"/>
+  <text x="82" y="124" fill="#64748B" font-family="ui-monospace, monospace" font-size="11" font-weight="700" letter-spacing="1">BARE-METAL INFRASTRUCTURE</text>
+
+  <rect x="82" y="142" width="274" height="46" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+  <text x="96" y="162" fill="#F8FAFC" font-family="ui-monospace, monospace" font-size="11.5" font-weight="700">VMware ESXi 8.0 Hypervisor</text>
+  <text x="96" y="177" fill="#38BDF8" font-family="ui-monospace, monospace" font-size="9.5">Terraform vSphere Provider · Automated Boot</text>
+
+  <rect x="82" y="198" width="274" height="46" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+  <text x="96" y="218" fill="#F8FAFC" font-family="ui-monospace, monospace" font-size="11.5" font-weight="700">pfSense Router &amp; Firewall</text>
+  <text x="96" y="233" fill="#10B981" font-family="ui-monospace, monospace" font-size="9.5">VLAN Isolation · WireGuard Mesh Mesh VPN</text>
+
+  <rect x="82" y="254" width="274" height="46" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+  <text x="96" y="274" fill="#F8FAFC" font-family="ui-monospace, monospace" font-size="11.5" font-weight="700">Kubernetes Cluster (k3s)</text>
+  <text x="96" y="289" fill="#F59E0B" font-family="ui-monospace, monospace" font-size="9.5">1 Control Plane · 2 Workers · Longhorn Storage</text>
+
+  <rect x="82" y="310" width="274" height="66" rx="6" fill="#172236" stroke="#4F46E5" stroke-width="1"/>
+  <text x="96" y="330" fill="#C7D2FE" font-family="ui-monospace, monospace" font-size="11" font-weight="700">Ansible Configuration Management</text>
+  <text x="96" y="348" fill="#A5B4FC" font-family="ui-monospace, monospace" font-size="9.5">Automated node patching, kernel tweaks,</text>
+  <text x="96" y="363" fill="#A5B4FC" font-family="ui-monospace, monospace" font-size="9.5">TLS certificate rotation via cert-manager</text>
+
+  <!-- Right: Metrics & Monitoring -->
+  <rect x="394" y="96" width="342" height="300" rx="8" fill="#080D18" stroke="#1F2A3F" stroke-width="1"/>
+  <text x="412" y="124" fill="#64748B" font-family="ui-monospace, monospace" font-size="11" font-weight="700" letter-spacing="1">OBSERVABILITY &amp; METRICS</text>
+
+  <rect x="412" y="142" width="150" height="54" rx="6" fill="#172236" stroke="#25344D" stroke-width="1"/>
+  <text x="424" y="162" fill="#64748B" font-family="ui-monospace, monospace" font-size="10">PROMETHEUS TARGETS</text>
+  <text x="424" y="186" fill="#10B981" font-family="ui-monospace, monospace" font-size="19" font-weight="700">38 Services</text>
+
+  <rect x="570" y="142" width="150" height="54" rx="6" fill="#172236" stroke="#25344D" stroke-width="1"/>
+  <text x="582" y="162" fill="#64748B" font-family="ui-monospace, monospace" font-size="10">UPTIME (365D)</text>
+  <text x="582" y="186" fill="#38BDF8" font-family="ui-monospace, monospace" font-size="19" font-weight="700">99.98%</text>
+
+  <rect x="412" y="210" width="308" height="166" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+  <text x="426" y="234" fill="#E2E8F0" font-family="ui-monospace, monospace" font-size="11" font-weight="600">Grafana Dashboard Preview</text>
+  
+  <!-- Mini Bar Charts -->
+  <g fill="#0284C7">
+    <rect x="430" y="320" width="14" height="40" rx="2"/>
+    <rect x="450" y="300" width="14" height="60" rx="2"/>
+    <rect x="470" y="280" width="14" height="80" rx="2"/>
+    <rect x="490" y="295" width="14" height="65" rx="2"/>
+    <rect x="510" y="270" width="14" height="90" rx="2"/>
+  </g>
+  <g fill="#10B981">
+    <rect x="536" y="260" width="14" height="100" rx="2"/>
+    <rect x="556" y="275" width="14" height="85" rx="2"/>
+    <rect x="576" y="285" width="14" height="75" rx="2"/>
+    <rect x="596" y="250" width="14" height="110" rx="2"/>
+    <rect x="616" y="265" width="14" height="95" rx="2"/>
+    <rect x="636" y="255" width="14" height="105" rx="2"/>
+    <rect x="656" y="245" width="14" height="115" rx="2"/>
+    <rect x="676" y="260" width="14" height="100" rx="2"/>
+    <rect x="696" y="270" width="14" height="90" rx="2"/>
+  </g>
+</svg>

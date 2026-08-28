@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="100%" height="auto" style="background:#0c1219;border-radius:12px;border:1px solid #233140;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,sans-serif;">
+  <defs>
+    <linearGradient id="stripTeal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1b5c64"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141d27"/>
+      <stop offset="100%" stop-color="#0f1720"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Window Header -->
+  <rect x="0" y="0" width="900" height="42" fill="#101822" border-top-left-radius="12" border-top-right-radius="12"/>
+  <circle cx="24" cy="21" r="5.5" fill="#ef4444"/>
+  <circle cx="42" cy="21" r="5.5" fill="#f59e0b"/>
+  <circle cx="60" cy="21" r="5.5" fill="#10b981"/>
+
+  <text x="84" y="25" fill="#64748b" font-size="11" font-weight="700" font-family="ui-monospace,SFMono-Regular,monospace" letter-spacing="1">NGUYEN TAN TAI // SYSTEM LEDGER TELEMETRY</text>
+
+  <!-- Live Status Badge -->
+  <rect x="670" y="10" width="205" height="22" rx="4" fill="#064e3b" stroke="#059669" stroke-width="1"/>
+  <circle cx="684" cy="21" r="4" fill="#34d399"/>
+  <text x="696" y="25" fill="#a7f3d0" font-size="10.5" font-weight="700" font-family="ui-monospace,SFMono-Regular,monospace">ACTIVE IN PRODUCTION</text>
+
+  <!-- 4 Metric Cards -->
+  <g transform="translate(24, 56)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="200" height="100" rx="8" fill="url(#cardGrad)" stroke="#233140" stroke-width="1"/>
+    <text x="16" y="38" fill="#2dd4bf" font-size="28" font-weight="800" font-family="ui-monospace,SFMono-Regular,monospace">50+</text>
+    <text x="16" y="58" fill="#cbd5e1" font-size="11" font-weight="700" font-family="ui-monospace,SFMono-Regular,monospace">PRODUCTION RELEASES</text>
+    <text x="16" y="78" fill="#94a3b8" font-size="10.5">Order shifts, routing &amp; e-contract</text>
+
+    <!-- Card 2 -->
+    <rect x="217" y="0" width="200" height="100" rx="8" fill="url(#cardGrad)" stroke="#233140" stroke-width="1"/>
+    <text x="233" y="38" fill="#38bdf8" font-size="28" font-weight="800" font-family="ui-monospace,SFMono-Regular,monospace">9</text>
+    <text x="233" y="58" fill="#cbd5e1" font-size="11" font-weight="700" font-family="ui-monospace,SFMono-Regular,monospace">SMAP MICROSERVICES</text>
+    <text x="233" y="78" fill="#94a3b8" font-size="10.5">Kafka · Qdrant RAG · K8s (9.15/10)</text>
+
+    <!-- Card 3 -->
+    <rect x="434" y="0" width="200" height="100" rx="8" fill="url(#cardGrad)" stroke="#233140" stroke-width="1"/>
+    <text x="450" y="38" fill="#f59e0b" font-size="28" font-weight="800" font-family="ui-monospace,SFMono-Regular,monospace">&lt;1ms</text>
+    <text x="450" y="58" fill="#cbd5e1" font-size="11" font-weight="700" font-family="ui-monospace,SFMono-Regular,monospace">ROUTING LATENCY</text>
+    <text x="450" y="78" fill="#94a3b8" font-size="10.5">Go route GW &amp; OSM toll pricing</text>
+
+    <!-- Card 4 -->
+    <rect x="651" y="0" width="200" height="100" rx="8" fill="url(#cardGrad)" stroke="#233140" stroke-width="1"/>
+    <text x="667" y="38" fill="#34d399" font-size="28" font-weight="800" font-family="ui-monospace,SFMono-Regular,monospace">Zero</text>
+    <text x="667" y="58" fill="#cbd5e1" font-size="11" font-weight="700" font-family="ui-monospace,SFMono-Regular,monospace">BALANCE LEAKAGE</text>
+    <text x="667" y="78" fill="#94a3b8" font-size="10.5">Auto debt sweep &amp; audit clearing</text>
+  </g>
+
+  <!-- Bottom Tech Stack Distribution Bar -->
+  <g transform="translate(24, 172)">
+    <rect x="0" y="0" width="852" height="52" rx="6" fill="#101720" stroke="#1e293b" stroke-width="1"/>
+    
+    <text x="16" y="21" fill="#94a3b8" font-size="10" font-weight="700" font-family="ui-monospace,SFMono-Regular,monospace" letter-spacing="0.5">STACK ALLOCATION</text>
+    
+    <!-- Legend - cleanly spaced without overlap -->
+    <text x="260" y="21" fill="#2dd4bf" font-size="10" font-weight="700" font-family="ui-monospace,SFMono-Regular,monospace">● Go (42%)</text>
+    <text x="390" y="21" fill="#38bdf8" font-size="10" font-weight="700" font-family="ui-monospace,SFMono-Regular,monospace">● Distributed (26%)</text>
+    <text x="575" y="21" fill="#f59e0b" font-size="10" font-weight="700" font-family="ui-monospace,SFMono-Regular,monospace">● Systems (18%)</text>
+    <text x="735" y="21" fill="#a78bfa" font-size="10" font-weight="700" font-family="ui-monospace,SFMono-Regular,monospace">● AI / ML (14%)</text>
+
+    <!-- Multi-colored segment bar -->
+    <g transform="translate(16, 32)">
+      <rect x="0" y="0" width="344" height="8" rx="2" fill="#2dd4bf"/>
+      <rect x="348" y="0" width="213" height="8" rx="2" fill="#38bdf8"/>
+      <rect x="565" y="0" width="148" height="8" rx="2" fill="#f59e0b"/>
+      <rect x="717" y="0" width="103" height="8" rx="2" fill="#a78bfa"/>
+    </g>
+  </g>
+</svg>
