@@ -22,7 +22,7 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://tantai.dev"),
+  metadataBase: new URL("https://tantai.id.vn"),
   title: "Nguyen Tan Tai | Backend Engineer",
   description:
     "System-ledger portfolio for Nguyen Tan Tai, Software Engineer G1 at Ahamove, focused on Go services, cloud-native infrastructure, and backend product delivery.",

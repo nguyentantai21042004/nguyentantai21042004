@@ -26,7 +26,7 @@ const samplePayload = {
 };
 
 function jsonRequest(body, { headers = {}, cf } = {}) {
-  const request = new Request('https://tantai.dev/event', {
+  const request = new Request('https://tantai.id.vn/event', {
     method: 'POST',
     headers: { 'content-type': 'application/json', ...headers },
     body: JSON.stringify(body),
@@ -50,7 +50,7 @@ describe('Cloudflare Pages notification function', () => {
   });
 
   it('rejects invalid JSON payloads', async () => {
-    const request = new Request('https://tantai.dev/event', {
+    const request = new Request('https://tantai.id.vn/event', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
       body: 'not json',

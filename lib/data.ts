@@ -8,7 +8,7 @@ export const profile = {
   location: "Ho Chi Minh City, VN",
   email: "nguyentantai.dev@gmail.com",
   phone: "0369169678",
-  portfolio: "https://tantai.dev",
+  portfolio: "https://tantai.id.vn",
   linkedinLabel: "linkedin.com/in/ngtantai2104",
   linkedin: "https://linkedin.com/in/ngtantai2104",
   github: "https://github.com/nguyentantai21042004",

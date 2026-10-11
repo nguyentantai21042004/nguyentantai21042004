@@ -4,7 +4,7 @@
 
 **Software Engineer at Ahamove (Level G1) | Distributed Systems | Cloud-Native Backend | Systems Engineering**
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-tantai.dev-1b5c64?style=flat&logo=safari&logoColor=white)](https://tantai.dev)
+[![Portfolio](https://img.shields.io/badge/Portfolio-tantai.id.vn-1b5c64?style=flat&logo=safari&logoColor=white)](https://tantai.id.vn)
 [![Email](https://img.shields.io/badge/Email-nguyentantai.dev%40gmail.com-ea4335?style=flat&logo=gmail&logoColor=white)](mailto:nguyentantai.dev@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ngtantai2104-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/ngtantai2104)
 [![GitHub](https://img.shields.io/badge/GitHub-nguyentantai21042004-181717?style=flat&logo=github&logoColor=white)](https://github.com/nguyentantai21042004)
@@ -20,7 +20,7 @@ I am a **Software Engineer at Ahamove (Level G1)** with extensive hands-on exper
 
 Beyond core logistics backend delivery, I architect **distributed systems, developer tools, and infrastructure automation** — spanning serverless vector warehouses on **Cloudflare Workers & pgvector**, offline-first desktop systems in **Rust & Tauri 2**, real-time concurrent WebSocket hubs in **Go**, and automated bare-metal **Kubernetes homelab** virtualization managed via Terraform & Ansible.
 
-Explore the interactive portfolio at [**tantai.dev**](https://tantai.dev) featuring dynamic full-view-height stages (`100dvh`), deep-dive system architecture inspection modals, and production engineering ledgers.
+Explore the interactive portfolio at [**tantai.id.vn**](https://tantai.id.vn) featuring dynamic full-view-height stages (`100dvh`), deep-dive system architecture inspection modals, and production engineering ledgers.
 
 ---
 
@@ -208,7 +208,7 @@ _Aug 2024 – Sep 2025 | Ho Chi Minh City, Vietnam_
 
 **Let's build reliable systems together.**
 
-[![Website](https://img.shields.io/badge/tantai.dev-1b5c64?style=for-the-badge&logo=google-chrome&logoColor=white)](https://tantai.dev)
+[![Website](https://img.shields.io/badge/tantai.id.vn-1b5c64?style=for-the-badge&logo=google-chrome&logoColor=white)](https://tantai.id.vn)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ngtantai2104)
 [![Email](https://img.shields.io/badge/Email-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:nguyentantai.dev@gmail.com)
 
